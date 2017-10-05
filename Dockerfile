@@ -14,7 +14,7 @@ ENV \
 
 # Install packages.
 RUN \
-  apk --update add bash coreutils curl vi tar wget openssh-client && \
+  apk --update add bash coreutils curl vim tar wget openssh-client && \
   rm -rf /var/cache/apk/*
 
 # Set the default command.
