@@ -1,7 +1,7 @@
 #
 # Alpine linux docker image with OpenSSH client
 #
-# A minimal base image based on Alpine Linux with OpenSSH client and other useful tools.
+# A minimal base image based on Alpine Linux with OpenSSH client
 #
 
 FROM alpine:latest
@@ -14,7 +14,7 @@ ENV \
 
 # Install packages.
 RUN \
-  apk --update add bash coreutils curl vim tar wget openssh-client && \
+  apk --update add bash openssh-client && \
   rm -rf /var/cache/apk/*
 
 # Set the default command.
